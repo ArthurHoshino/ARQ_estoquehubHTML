@@ -119,34 +119,43 @@
     <div id="overlay" class="overlay"></div>
 
     <main>
-        <form class="registro-form">
+        <img src="../assets/img/imagemfundo2comp.png" alt="Fundo" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;">
+        <form class="geral-form">
+            <h2>Cadastre-se</h2>
             <aside class="obrigatorio-alerta">
                 &#10071; Os campos em * são obrigatórios
             </aside>
             <div class="form-group full-width">
                 <label for="nome">Nome *</label>
-                <input type="text" id="nome" name="nome" required />
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"/>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
                     <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"/>
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefone *</label>
-                    <input type="text" id="telefone" name="telefone" />
+                    <label for="telefone">Telefone </label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone"/>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
                     <label for="senha">Senha *</label>
-                    <input type="password" id="senha" name="senha" required />
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha"/>
                 </div>
                 <div class="form-group">
                     <label for="confirmar-senha">Confirmar senha *</label>
-                    <input type="password" id="confirmar-senha" name="confirmar-senha" required />
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Conforme sua senha"/>
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -27,4 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
+    
 });
