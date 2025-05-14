@@ -110,10 +110,6 @@
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
-/* ============================= */
-/* RESPONSIVIDADE */
-/* ============================= */
-
 /* Telas até 768px (tablets) */
 @media (max-width: 768px) {
     .main {
