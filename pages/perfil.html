@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro</title>
-    <link rel="stylesheet" href="../assets/css/registro.css" />
+    <title>Login</title>
     <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
-    <script src="../scripts/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css" />
 </head>
 
 <body>
@@ -117,7 +115,6 @@
     </div>
 
     <div id="overlay" class="overlay"></div>
-
     <main>
         <img src="../assets/img/imagemfundo2comp.png" alt="Fundo" style="
         position: fixed;
@@ -127,43 +124,51 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;">
-        <form class="geral-form">
-            <h2>Cadastre-se</h2>
-            <aside class="obrigatorio-alerta">
-                &#10071; Os campos em * são obrigatórios
-            </aside>
-            <div class="form-group full-width">
-                <label for="nome">Nome *</label>
-                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"/>
-            </div>
+        <div class="form-container">
+            <div class="geral-form">
+                <h2>Seu perfil</h2>
+                <div class="form-group full-width">
+                    <label for="nome">Nome *</label>
+                    <input type="name" id="name" name="nome" required placeholder="Digite seu nome">
+                </div>
 
-            <div class="form-row">
-                <div class="form-group">
+                <div class="form-group full-width">
                     <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"/>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com " readonly
+                        class="campo-readonly">
                 </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone </label>
-                    <input type="tel" id="telefone" name="telefone" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" placeholder="Digite seu telefone"/>
+
+                <div class="form-group full-width">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 11111-1111" maxlength="15"
+                        required>
+                </div>
+
+                <aside class="obrigatorio-alerta">
+                    &#10071; O campo email não pode ser alterado
+                </aside>
+                <button type="submit" class="normal-button perfil-button">Atualizar Dados</button>
+
+            </div>
+            <div class="geral-form">
+                <h2>Mude sua senha</h2>
+                <div class="form-group-senha">
+                    <div class="form-group full-width">
+                        <label for="senha">Nova senha *</label>
+                        <input type="password" id="senha" name="senha" required placeholder="Digite sua nova senha" />
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="senha">Confirme sua senha *</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" required
+                            placeholder="Confirmar sua nova senha" />
+                    </div>
+                </div>
+                <div class="botoes-footer">
+                    <button type="submit" class="normal-button perfil-button">Atualizar Dados</button>
                 </div>
             </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="senha">Senha *</label>
-                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha"/>
-                </div>
-                <div class="form-group">
-                    <label for="confirmar-senha">Confirmar senha *</label>
-                    <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Conforme sua senha"/>
-                </div>
-            </div>
-
-            <button type="submit" class="normal-button">Registrar</button>
-            <aside>
-                💡 Já possui uma conta? <a href="#"><strong>Entre aqui</strong></a>
-            </aside>
-        </form>
+        </div>
 
     </main>
 
