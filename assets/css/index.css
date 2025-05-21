@@ -93,7 +93,7 @@
     margin: 0 auto 30px;
 }
 
-.cta .normal-button {
+.cta .normal-button-2 {
     background: linear-gradient(135deg, #ffffff, #f1f1f1);
     color: #3498db;
     font-size: 1rem;
@@ -103,16 +103,30 @@
     cursor: pointer;
 }
 
-.cta .normal-button:hover {
+.cta .normal-button-2:hover {
     background: linear-gradient(135deg, #f1f1f1, #ffffff);
     color: #2980b9;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
 
-/* ============================= */
-/* RESPONSIVIDADE */
-/* ============================= */
+.normal-button-2 {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    color: #3498db;
+    font-size: 1rem;
+    padding: 15px 35px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25);
+    border: none;
+    cursor: pointer;
+}
+
+.normal-button-2:hover {
+    background: linear-gradient(135deg, #f1f1f1, #ffffff);
+    color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+}
+
 
 /* Telas até 768px (tablets) */
 @media (max-width: 768px) {
