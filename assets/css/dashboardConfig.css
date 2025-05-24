@@ -8,8 +8,6 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f7fa;
     color: #333;
-    height: 100vh !important;
-    min-height: auto;
 }
 
 /* Header */
@@ -94,37 +92,8 @@ body {
     box-sizing: border-box;
 }
 
-.normal-button,
-.normal-button-sair{
-    margin-top: 10px;
-}
-
-.form-actions{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
-    align-items: center;
-}
-
-.normal-button-sair {
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 6px rgba(52, 152, 219, 0.3);
-    background-color: var(--alert-color);
-}
-
-.normal-button-sair:hover {
-    background-color: var(--alert-color);
-    transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 12px rgba(41, 128, 185, 0.3);
+.normal-button {
+    margin-top: 15px;
 }
 
 /* Layout principal */
@@ -135,6 +104,7 @@ body {
 /* Conteúdo principal */
 .main-content {
     flex: 1;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -383,12 +353,6 @@ body {
 .paginacao span {
     font-weight: bold;
 }
-
-.form-actions button[type="button"] {
-    background-color: var(--alert-color) !important;
-
-}
-
 
 .menu a:last-child {
     background-color: var(--alert-color);

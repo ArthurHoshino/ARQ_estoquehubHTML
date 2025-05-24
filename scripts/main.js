@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
     if (overlay) overlay.addEventListener('click', closeMenu);
 
-
+    
 });
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.aside li');
@@ -53,4 +53,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-

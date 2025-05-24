@@ -68,17 +68,11 @@ img {
     transition: all 0.3s ease;
     box-shadow: 0 3px 6px rgba(52, 152, 219, 0.3);
 }
-/* botão especifico do perfil  */
-.perfil-button.normal-button {
-  width: 500px;
-  display: block;
-  margin: 20px auto 0;
-}
 
 .botoes-footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .normal-button:hover {
@@ -205,39 +199,38 @@ aside a:hover {
 
 /* Formulário de Registro */
 .geral-form {
-  background-color: #fafafa;
-  padding: 36px 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    background-color: #fafafa;
+    padding: 36px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .form-group-senha {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin: 50px auto;
-  max-width: 1700px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1700px;
 }
 
-  .campo-readonly {
+.campo-readonly {
     background-color: #f0f0f0;
     color: #666;
     opacity: 0.7;
     cursor: not-allowed;
-  }
+}
 
 .normal-button-2 {
     background: linear-gradient(135deg, #ffffff, #f1f1f1);
@@ -256,6 +249,8 @@ aside a:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
 }
+
+
 
 @media (max-width: 991px) {
     .geral-form {
